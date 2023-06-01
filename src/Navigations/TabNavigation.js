@@ -6,8 +6,10 @@ const Tab = createBottomTabNavigator();
 const TabNavigations = () => {
 	return (
 		<Tab.Navigator
+
 			screenOptions={{
 				tabBarActiveTintColor: "#e91e63",
+				headerShown : false
 			}}>
 			{TabConfig.map((tab) => (
 				<Tab.Screen
@@ -16,6 +18,7 @@ const TabNavigations = () => {
 					name={tab.name}
 					component={tab.component}
 					options={tab.options}
+
 
 				/>
 			))}

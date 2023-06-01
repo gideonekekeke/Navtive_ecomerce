@@ -3,11 +3,14 @@ import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import TabNavigations from "./src/Navigations/TabNavigation";
 import { NavigationContainer } from "@react-navigation/native";
 
+
 export default function App() {
 	return (
-		<NavigationContainer>
-			<TabNavigations />
-		</NavigationContainer>
+		<>
+			<NavigationContainer>
+				<TabNavigations />
+			</NavigationContainer>
+		</>
 	);
 }
 
