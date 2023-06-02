@@ -17,7 +17,7 @@ import Products from "../Components/Products";
 const HomeScreen = () => {
 	const { width } = Dimensions.get("window");
 	return (
-		<SafeAreaView>
+		<SafeAreaView style = {{paddingTop : 50}}>
 			<ScrollView>
 				<View style={styles.container}>
 					<Text>
